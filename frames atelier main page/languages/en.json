@@ -1,0 +1,9 @@
+{
+  "<a class=\"nav-link\" href=\"#\">პროდუქცია<span class=\"sr-only\">(current)</span></a>":"<a class=\"nav-link\" href=\"#\">Product<span class=\"sr-only\">(current)</span></a>",
+  "<a class=\"nav-link\" href=\"#\">ჩვენ შესახებ<span class=\"sr-only\">(current)</span></a>":"<a class=\"nav-link\" href=\"#\">About us<span class=\"sr-only\">(current)</span></a>",
+  "<a class=\"nav-link\" href=\"#\">კონტაქტი<span class=\"sr-only\">(current)</span></a>":"<a class=\"nav-link\" href=\"#\">Contact<span class=\"sr-only\">(current)</span></a>",
+  "<a class=\"nav-link\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">KA</a>":"<a class=\"nav-link\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">EN</a>",
+  "კალათა":"shopping cart",
+  "ბრენდები":"Brands",
+  "Title":"Title"
+}

@@ -1,0 +1,130 @@
+/* filter container */
+
+.filter-container {
+    /*width: 60%;*/
+    width: 15%;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #f4f4f4;
+    border-radius: 3px;
+    /*display: flex;*/
+    margin: 0 auto;
+    margin-left: 10%;
+    /*padding:1em;*/
+    /*max-width: 15%;*/
+    /* To avoid image stretching on low width screens */
+    align-items: center;
+    float: left;
+}
+.form-check {
+    float: left;
+}
+
+/* end of filter container */
+
+
+
+.list {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.list--item {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+.list--item figure {
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.list--item img {
+    display: block;
+    width: 100%;
+}
+.list--item figcaption {
+    padding: 6px 12px 12px;
+    font-size: 12px;
+    color: #444;
+}
+.list--item header, .list--item figcaption {
+    padding-left: 25%;
+}
+.list--item header {
+    margin-top: 12px;
+}
+.list--item h2 {
+    font-size: 14px;
+    padding: 0 0 0;
+    margin: 0;
+}
+
+/*.floater {*/
+/*    width: 20%;*/
+/*    height: 50px;*/
+/*    background: orange;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*}*/
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .list--item {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .list--item {
+        width: 33%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .list--item {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .list--item {
+        width: 100%;
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .list--item {
+        width: 100%;
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .list--item {
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .list--item {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 355px) {
+    .list--item {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
