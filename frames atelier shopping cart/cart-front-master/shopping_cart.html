@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mr-auto" >
+            <li class="nav-item active">
+                <a class="navbar-brand" href="#">Brand</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">პროდუქცია<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">ჩვენ შესახებ<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">კონტაქტი<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <div class="hoverdropdown1">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        KA
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">KA</a>
+                        <a class="dropdown-item" href="#">EN</a>
+                        <a class="dropdown-item" href="#">RU</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=""><img src="circle-cropped.png" width="24"><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" title="კალათა"><img src="cart-59-64.png" width="24"><span class="sr-only">(current)</span>
+                    <span class="badge badge-light">0</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<h1 id="shopping_cart_header">Shopping Cart</h1>
+
+
+<div class="shopping-cart">
+
+    <div class="column-labels">
+        <label class="product-image">Image</label>
+        <label class="product-details">Product</label>
+<!--         class="property">Property            ეს details ბოლოში მიეკროს დამატებით თვისება მაგ ფერი -->
+        <label class="product-price">Price</label>
+        <label class="product-quantity">Quantity</label>
+        <label class="product-removal">Remove</label>
+        <label class="product-line-price">Total</label>
+    </div>
+    <!--            -->
+    <div class="product">
+        <div class="product-image">
+            <img class="sub-product-image" class="sub-product-image" src="joke.jpg">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Nike Flex Form TR Women's Sneaker</div>
+            <p class="product-description"> It has a lightweight, breathable mesh upper with forefoot cables for a
+                locked-down fit.</p>
+        </div>
+        <div class="product-price">12.99</div>
+        <div class="product-quantity">
+            <input type="number" value="1" min="1">
+        </div>
+        <div class="product-removal">
+            <button class="remove-product">
+                <i class="fa fa-trash-o" style="font-size:24px"></i>
+            </button>
+        </div>
+        <div class="product-line-price">25.98</div>
+    </div>
+    <!--            -->
+    <div class="product">
+        <div class="product-image">
+            <img class="sub-product-image" src="joke2.jpg" alt="">
+        </div>
+        <div class="product-details">
+            <div class="product-title">ULTRABOOST UNCAGED SHOES</div>
+            <p class="product-description">Born from running culture, these men's shoes deliver the freedom of a
+                cage-free design</p>
+        </div>
+        <div class="product-price">45.99</div>
+        <div class="product-quantity">
+            <input type="number" value="1" min="1">
+        </div>
+        <div class="product-removal">
+            <button class="remove-product">
+                <i class="fa fa-trash-o" style="font-size:24px"></i>
+            </button>
+        </div>
+        <div class="product-line-price">45.99</div>
+    </div>
+
+    <div class="product">
+        <div class="product-image">
+            <img class="sub-product-image" src="joke.jpg">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Nike Flex Form TR Women's Sneaker</div>
+            <p class="product-description"> It has a lightweight, breathable mesh upper with forefoot cables for a
+                locked-down fit.</p>
+        </div>
+        <div class="product-price">12.99</div>
+        <div class="product-quantity">
+            <input type="number" value="1" min="1">
+        </div>
+        <div class="product-removal">
+            <button class="remove-product">
+                <i class="fa fa-trash-o" style="font-size:24px"></i>
+            </button>
+        </div>
+        <div class="product-line-price">25.98</div>
+    </div>
+
+
+
+    <div class="totals">
+        <div class="totals-item">
+            <label>Subtotal</label>
+            <div class="totals-value" id="cart-subtotal">71.97</div>
+        </div>
+        <!--        <div class="totals-item">-->
+        <!--&lt;!&ndash;            <label>Tax (5%)</label>&ndash;&gt;-->
+        <!--            <div class="totals-value" id="cart-tax">3.60</div>-->
+        <!--        </div>-->
+        <div class="totals-item">
+            <label>Shipping</label>
+            <div class="totals-value" id="cart-shipping">15.00</div>
+        </div>
+        <div class="totals-item totals-item-total">
+            <label>Grand Total</label>
+            <div class="totals-value" id="cart-total">90.57</div>
+        </div>
+    </div>
+
+    <button class="checkout">Checkout</button>
+
+</div>
+
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+        <small>Copyright &copy; Your Website</small>
+
+    </div>
+</footer>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="javascript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

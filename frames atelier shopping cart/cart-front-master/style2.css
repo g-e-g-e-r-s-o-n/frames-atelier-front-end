@@ -1,0 +1,111 @@
+html {
+    height: 100%;
+}
+body {
+    min-height:100%;
+    position:relative;
+    padding-bottom: 80px;
+}
+
+
+
+
+/* Carousel Swiper*/
+.carousel{
+    background: #2f4357;
+    /*background: transparent;*/
+    /*margin-top: 20px;*/
+}
+.carousel-item{
+    text-align: center;
+    min-height: 100px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    max-height: 350px;
+    width:100%;
+}
+.align-middle {
+    width: 60%;
+}
+
+@media screen and (max-width: 1600px) {
+    .align-middle {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .align-middle {
+        width: 100%;
+    }
+}
+
+.bs-example{
+    /*margin: 20px;*/
+}
+
+/* Hover Dropdown */
+
+.hoverdropdown1:hover>.dropdown-menu {
+    display: block;
+    top: 100%;
+}
+
+
+.hoverdropdown2:hover>.dropdown-menu {
+    display: block;
+    top: 100%;
+}
+
+.dropdown-menu {
+    min-width: 3rem;
+}
+
+#sticky-footer {
+    position: absolute;
+    left: 0 ; right: 0; bottom: 0;
+    height: 80px;
+}
+/*end of hover Dropdown*/
+
+
+
+/*  brands  */
+.brands {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: gray;
+}
+/* end of brands */
+
+/*hover cards*/
+.list--item figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.list--item figure:hover img {
+    opacity: .5;
+}
+
+/* end of hover cards */
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

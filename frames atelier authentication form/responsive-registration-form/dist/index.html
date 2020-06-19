@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePen - Responsive Registration Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="sign-up">
+<!-- partial:index.partial.html -->
+<div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Sign up</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder="Password" id="password" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password_confirm" placeholder="Re-type Password" oninput="check(this)" id="password_confirm" required />
+          </div>
+          <div class="row clearfix">
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="First Name" />
+              </div>
+            </div>
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="Last Name" required />
+              </div>
+            </div>
+          </div>
+          <div class="row clearfix">
+            <div class="col_3">
+              <div class="input_field">
+                <select class="custom-select" style="height: 35px">
+                  <option selected="">+995</option>
+                </select>
+              </div>
+            </div>
+            <div class="col_9">
+              <div class="input_field"><span><i class="fa fa-phone"></i></span>
+                <input id="tel1" name="phone-number" pattern="[0-9]{9}" placeholder="Phone Number" type="tel" required/>
+              </div>
+            </div>
+          </div>
+            <div class="input_field checkbox_option">
+            	<input type="checkbox" id="cb" required>
+    			<label for="cb"><a href="#" class="terms">I agree with terms and conditions</a></label>
+            </div>
+          <input class="button" type="submit" value="Sign up" />
+        </form>
+      </div>
+    </div>
+    <div class="title_container">
+      <a href="#" class="jump">
+      <h4>Log in</h4>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="log-in">
+  <div class="form_wrapper">
+    <div class="form_container">
+      <div class="title_container">
+        <h2>Log in</h2>
+      </div>
+      <div class="row clearfix">
+        <div class="">
+          <form>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="password" name="password" placeholder="Password" id="password1" required />
+            </div>
+            <input class="button" type="submit" value="Log in" />
+          </form>
+        </div>
+      </div>
+      <div class="title_container">
+        <a href="#" class="jump">
+        <h4>Sign up</h4>
+        </a>
+      </div>
+      <hr class="hr-text" data-content="or">
+      <div class="title_container">
+        <div class="row omb_row-sm-offset-3 omb_socialButtons">
+          <a href="#">
+            <button class="fb-button"><i class="fa fa-facebook fa-2x"></i>Facebook</button>
+          </a>
+        </div>
+      </div>
+        <div class="title_container">
+          <a href="#" class="forgot-password">
+            <p>Forgot password?</p>
+          </a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="log-in">
+  <div class="form_wrapper">
+    <div class="form_container">
+      <div class="title_container">
+        <h2>Password recovery</h2>
+      </div>
+      <div class="row clearfix">
+        <div class="">
+          <form>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <input class="button" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <div class="title_container">
+        <a href="#" class="jump">
+          <h4>Go back</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>
